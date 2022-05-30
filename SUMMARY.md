@@ -2,4 +2,4 @@
 
 ## Introduction
 
-* [What is Pendora](README.md)
+* [What is Pendora?](README.md)
