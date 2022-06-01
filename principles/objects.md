@@ -8,7 +8,7 @@ Shape describes how an object is internally structured. All values in an object 
 
 ## Methods
 
-Methods are how you create and interact with objects. They can be passed arguments and access data from their parent object.
+Methods are how you create and interact with objects. They can be passed arguments and access data from their parent object. Methods can also be defined outside of objects to be used by multiple objects through inheritance.
 
 ### Initialisers
 
