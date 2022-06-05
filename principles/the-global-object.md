@@ -21,4 +21,4 @@ requestRoute = "https://api.example.com/users"
 
 ### Keys
 
-For API keys and the such you can specify a shape for the values with types and setter with be generated on the global object.
+For API keys and the such you can specify a shape for the values with types. The global object with automatically have setter functions generated for it.
