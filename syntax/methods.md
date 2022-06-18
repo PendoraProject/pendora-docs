@@ -4,7 +4,7 @@
 
 ```
 InitMethod getExampleFromString(String arg){
-    route(/getExample)
+    route("/getExample")
     
     request({
         "X-API-KEY": GLOBAL.APIKey,
@@ -12,7 +12,7 @@ InitMethod getExampleFromString(String arg){
     })
     
     return<ExampleObject>({
-        "message": string,
+        "message": String,
         @as("someNumbers"){"nums"}: int,
         "isAdmin": bool
     })
