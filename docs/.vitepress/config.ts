@@ -3,15 +3,10 @@ export default {
 	lang: 'en-US',
 	description: 'Declarative syntax for producing multiplatform wrappers and SDKs for REST APIs from a single codebase.',
     themeConfig: {
-        logo: '/assets/logo.svg',
+        logo: '/logo.svg',
         nav: [
-          {
-              text: "Guide",
-              items: [
-                  {text: "User Guide", link: "/user_guide/00_what_is_pendora"},
-                  {text: "Implemenatation Guide", link: "/developer_guide/introduction"}
-              ]
-          }
+          {text: "User Guide", link: "/user_guide/00_what_is_pendora"},
+          {text: "Implemenatation Guide", link: "/developer_guide/introduction"}
         ],
         sidebar: {
           '/user_guide/': [
@@ -43,10 +38,22 @@ export default {
               items: [
                 {text: 'Tokenisation', link: '/developer_guide/tokenisation'},
                 {text: 'Parsing', link: '/developer_guide/parsing'},
-                {text: 'Intermediate Representation', link: '/developer_guide/intermediate_representation'},
+                {text: 'Project', link: '/developer_guide/project'},
               ]
             },
-          ]
+            {
+            	text: 'Transpiling',
+            	items: [
+            		{text: 'General Overview', link: '/developer_guide/transpiling_overview'},
+            		{text: 'Constants', link: '/developer_guide/transpiler_constants'},
+            		{text: 'Conversions', link: '/developer_guide/transpiler_conversions'},
+            	]
+            },
+            {
+            	text: 'Language Specifics',
+            	items: [],
+            },
+          ],
         },
         footer: {
           message: 'Released under the <License Unchosen>.',

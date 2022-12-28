@@ -4,7 +4,9 @@ title: Introduction
 
 # {{ $frontmatter.title }}
 
-This version of the documentation is designed to explain how the language is structured and how it works under the hood.
+Hey folks, welcome to the documentation about how Pendora itself works, better known internally as the `impl` docs. 
+
+This version of the documentation is designed to explain how the language is structured and how it all of its parts come together under the hood.
 The compiler is designed to be extensible to be ported to different language targets.
 
 ## Languages to implement

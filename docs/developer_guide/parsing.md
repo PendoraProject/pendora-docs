@@ -12,13 +12,13 @@ This starts by determining the type of file using the first token in the Vector.
 After an initial "sanity check" of the first token, the parser aims to return a data structure like the following:
 ```rust
 pub struct Method {
-    pub(crate) name: String,
-    pub(crate) arguments: MethodArguments,
-    pub(crate) route: String,
-    pub(crate) request_shape: RequestShape,
-    pub(crate) request_type: RequestType,
-    pub(crate) return_shape: ReturnShape,
-    pub(crate) return_object: String,
+    pub name: String,
+    pub arguments: MethodArguments,
+    pub route: String,
+    pub request_shape: RequestShape,
+    pub request_type: RequestType,
+    pub return_shape: ReturnShape,
+    pub return_object: String,
 }
 ```
 The token after the identifier should be a [Word](/developer_guide/tokenisation#words) containing the name of the method. It then checks if the next token is an open bracket. If so, the parser iterates until it finds a closed bracket and then hands off the captured tokens to `parse_method_arguments()`.
@@ -102,9 +102,9 @@ After an initial "sanity check" of the first token, the parser aims to return a 
 
 ```rust
 pub struct Object {
-    pub(crate) name: String,
-    pub(crate) shape: ObjectShape,
-    pub(crate) methods: Vec<String>,
+    pub name: String,
+    pub shape: ObjectShape,
+    pub methods: Vec<String>,
 }
 ```
 The token after the identifier should be a [Word](/developer_guide/tokenisation#words) containing the name of the object.
@@ -131,10 +131,10 @@ This is repeated for all other chunks.
 Global Object parsing is almost exactly the same as object parsing. The only difference is the addition of head route.
 ```rust
 pub struct Global {
-    pub(crate) name: String,
-    pub(crate) head_route: String,
-    pub(crate) shape: ObjectShape,
-    pub(crate) methods: Vec<String>,
+    pub name: String,
+    pub head_route: String,
+    pub shape: ObjectShape,
+    pub methods: Vec<String>,
 }
 ```
 ### Head Route
